@@ -3,11 +3,37 @@ let resultData = {
   currentUser: { username: "Guest" },
   score: 0,
   total: 10,
+  correctCount: 0,
+  incorrectCount: 0,
+  unansweredCount: 0,
+  attemptedCount: 0,
+  percentage: 0,
   selectedAnswers: [],
   questions: [],
   attempts: [],
   bestScore: 0,
 };
+
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  }[char]));
+}
+
+function normalizeAnswer(value) {
+  return String(value ?? '').trim().toLowerCase();
+}
+
+function isAnswerCorrect(question, userAnswer) {
+  if (userAnswer === undefined || userAnswer === null || String(userAnswer).trim() === '') {
+    return false;
+  }
+  return normalizeAnswer(userAnswer) === normalizeAnswer(question?.answer);
+}
 
 async function loadResult() {
   try {
@@ -29,6 +55,12 @@ function renderResult() {
   const questions = resultData.questions || [];
   const history = resultData.attempts || [];
   const userBestScore = Number(resultData.bestScore) || score;
+  const correctCount = Number(resultData.correctCount) || 0;
+  const incorrectCount = Number(resultData.incorrectCount) || 0;
+  const unansweredCount = Number(resultData.unansweredCount) || 0;
+  const attemptedCount = Number(resultData.attemptedCount) || Math.max(total - unansweredCount, 0);
+  const percentage = Number(resultData.percentage) || (total ? Math.round((score / total) * 100) : 0);
+  const performanceText = percentage >= 70 ? 'Excellent work!' : percentage >= 40 ? 'Good effort!' : 'Keep practicing!';
 
   let resultTable = `
     <table style="width:100%; border-collapse: collapse; margin-top: 20px;">
@@ -42,8 +74,8 @@ function renderResult() {
     const userAnswer = selectedAnswers[index];
     let status = 'Not Attempted';
 
-    if (userAnswer !== undefined && userAnswer !== null) {
-      status = userAnswer === q.answer ? 'Correct' : 'Wrong';
+    if (userAnswer !== undefined && userAnswer !== null && String(userAnswer).trim() !== '') {
+      status = isAnswerCorrect(q, userAnswer) ? 'Correct' : 'Wrong';
     }
 
     const rowColor = status === 'Correct'
@@ -62,8 +94,12 @@ function renderResult() {
   resultTable += '</table>';
 
   resultContainer.innerHTML = `
-    <h2>Quiz Result for <span class="highlight">${userName}</span></h2>
+    <h2>Quiz Result for <span class="highlight">${escapeHtml(userName)}</span></h2>
+    <p style="font-size: 16px; margin-bottom: 6px;"><strong>${escapeHtml(performanceText)}</strong></p>
     <p>Your Score: <strong>${score} / ${total}</strong></p>
+    <p>Percentage: <strong>${percentage}%</strong></p>
+    <p>Correct: <strong>${correctCount}</strong> &nbsp;|&nbsp; Wrong: <strong>${incorrectCount}</strong> &nbsp;|&nbsp; Unanswered: <strong>${unansweredCount}</strong></p>
+    <p>Attempted Questions: <strong>${attemptedCount}</strong></p>
     <p>Best Score: <strong>${Math.max(userBestScore, score)} / ${total}</strong></p>
 
     ${resultTable}
@@ -74,41 +110,43 @@ function renderResult() {
 
     <div id="history-report" style="display: none; margin-top: 25px;">
       <h3>Last 10 Attempts</h3>
-      <table border="1" cellpadding="8" style="width: 100%; border-collapse: collapse;">
-        <thead>
-          <tr style="background-color: #eee;">
-            <th>#</th>
-            <th>Date & Time</th>
-            <th>Score</th>
-            <th>Report</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${history.map((item, idx) => `
-            <tr>
-              <td>${idx + 1}</td>
-              <td>${item.timestamp}</td>
-              <td>${item.score} / ${item.total}</td>
-              <td><button class="view-btn" onclick="showAttemptAnswerKey(${idx})">View</button></td>
+      ${history.length ? `
+        <table border="1" cellpadding="8" style="width: 100%; border-collapse: collapse;">
+          <thead>
+            <tr style="background-color: #eee;">
+              <th>#</th>
+              <th>Date & Time</th>
+              <th>Score</th>
+              <th>Report</th>
             </tr>
-          `).join('')}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            ${history.map((item, idx) => `
+              <tr>
+                <td>${idx + 1}</td>
+                <td>${escapeHtml(item.timestamp || '')}</td>
+                <td>${Number(item.score) || 0} / ${Number(item.total) || 0}</td>
+                <td><button class="view-btn" onclick="showAttemptAnswerKey(${idx})">View</button></td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      ` : '<p>No previous attempts recorded yet.</p>'}
     </div>
 
     <div id="answer-key" style="display: none; margin-top: 25px;">
       <h3>Answer Key</h3>
       ${questions.map((q, i) => {
         const userAns = selectedAnswers[i];
-        const isCorrect = userAns === q.answer;
-        const userDisplay = userAns
-          ? `<span style="color: ${isCorrect ? 'green' : 'red'};">${userAns}</span>`
+        const isCorrect = isAnswerCorrect(q, userAns);
+        const userDisplay = userAns !== undefined && userAns !== null && String(userAns).trim() !== ''
+          ? `<span style="color: ${isCorrect ? 'green' : 'red'};">${escapeHtml(userAns)}</span>`
           : '<span style="color: orange;">Not Attempted</span>';
 
         return `
           <div style="margin-bottom: 15px; padding: 10px; background-color: #f4f4f4; border-radius: 8px;">
-            <p><strong>Q${i + 1}: ${q.question}</strong></p>
-            <p>Correct Answer: <span style="color: green;">${q.answer}</span></p>
+            <p><strong>Q${i + 1}: ${escapeHtml(q.question)}</strong></p>
+            <p>Correct Answer: <span style="color: green;">${escapeHtml(q.answer)}</span></p>
             <p>Your Answer: ${userDisplay}</p>
           </div>
         `;
@@ -142,6 +180,8 @@ function showAttemptAnswerKey(index) {
   const wrapper = document.getElementById('attempt-answer-key');
   const container = document.getElementById('attempt-key-content');
 
+  if (!wrapper || !container) return;
+
   if (wrapper.dataset.shownIndex === String(index)) {
     wrapper.style.display = 'none';
     wrapper.dataset.shownIndex = '';
@@ -154,15 +194,15 @@ function showAttemptAnswerKey(index) {
   container.innerHTML = attempt.questions
     .map((q, i) => {
       const userAns = attempt.selectedAnswers[i];
-      const isCorrect = userAns === q.answer;
-      const userDisplay = userAns
-        ? `<span style="color: ${isCorrect ? 'green' : 'red'};">${userAns}</span>`
+      const isCorrect = isAnswerCorrect(q, userAns);
+      const userDisplay = userAns !== undefined && userAns !== null && String(userAns).trim() !== ''
+        ? `<span style="color: ${isCorrect ? 'green' : 'red'};">${escapeHtml(userAns)}</span>`
         : '<span style="color: orange;">Not Attempted</span>';
 
       return `
         <div style="margin-bottom: 15px; padding: 10px; background-color: #f0f0f0; border-radius: 8px;">
-          <p><strong>Q${i + 1}: ${q.question}</strong></p>
-          <p>Correct Answer: <span style="color: green;">${q.answer}</span></p>
+          <p><strong>Q${i + 1}: ${escapeHtml(q.question)}</strong></p>
+          <p>Correct Answer: <span style="color: green;">${escapeHtml(q.answer)}</span></p>
           <p>Your Answer: ${userDisplay}</p>
         </div>
       `;

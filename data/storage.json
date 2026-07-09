@@ -13,6 +13,13 @@
       "userphone": "7564364667",
       "usergender": "Male",
       "userdob": "2010-03-12"
+    },
+    {
+      "username": "a",
+      "useremail": "a@gmail.com",
+      "userphone": "1266127386",
+      "usergender": "Male",
+      "userdob": "2010-08-12"
     }
   ],
   "sessions": {
@@ -49,6 +56,256 @@
       "score": 0,
       "total": 0,
       "attempts": []
+    },
+    "g6zJAzaPS_ApfVZ9PaWpNthPjJykIDTd": {
+      "authenticated": true,
+      "currentUser": {
+        "username": "a",
+        "useremail": "a@gmail.com",
+        "userphone": "1266127386",
+        "usergender": "Male",
+        "userdob": "2010-08-12"
+      },
+      "testCompleted": true,
+      "selectedSubject": "dsa",
+      "questions": [
+        {
+          "question": "Which sorting algorithm has the best case time complexity of O(n)?",
+          "options": [
+            "Bubble Sort",
+            "Insertion Sort",
+            "Merge Sort",
+            "Selection Sort"
+          ],
+          "answer": "Insertion Sort"
+        },
+        {
+          "question": "Which of the following is not a linear data structure?",
+          "options": [
+            "Graph",
+            "Queue",
+            "Array",
+            "Stack"
+          ],
+          "answer": "Graph"
+        },
+        {
+          "question": "Which traversal gives sorted output in BST?",
+          "options": [
+            "Inorder",
+            "Preorder",
+            "Postorder",
+            "Level Order"
+          ],
+          "answer": "Inorder"
+        },
+        {
+          "question": "Which of these is a non-linear data structure?",
+          "options": [
+            "Tree",
+            "Array",
+            "Stack",
+            "Queue"
+          ],
+          "answer": "Tree"
+        },
+        {
+          "question": "Which data structure is used in breadth-first search?",
+          "options": [
+            "Queue",
+            "Stack",
+            "Graph",
+            "Tree"
+          ],
+          "answer": "Queue"
+        },
+        {
+          "question": "Which of the following is not a type of binary tree?",
+          "options": [
+            "Circular Tree",
+            "Full Binary Tree",
+            "Complete Binary Tree",
+            "Perfect Binary Tree"
+          ],
+          "answer": "Circular Tree"
+        },
+        {
+          "question": "Which data structure uses LIFO (Last In First Out)?",
+          "options": [
+            "Stack",
+            "Queue",
+            "Array",
+            "Linked List"
+          ],
+          "answer": "Stack"
+        },
+        {
+          "question": "What is the time complexity to search in a hash table?",
+          "options": [
+            "O(1)",
+            "O(n)",
+            "O(log n)",
+            "O(n log n)"
+          ],
+          "answer": "O(1)"
+        },
+        {
+          "question": "What is the maximum number of nodes in a binary tree of height h?",
+          "options": [
+            "2^h - 1",
+            "h",
+            "h^2",
+            "2h"
+          ],
+          "answer": "2^h - 1"
+        },
+        {
+          "question": "What is the worst case time complexity of linear search?",
+          "options": [
+            "O(n)",
+            "O(log n)",
+            "O(n log n)",
+            "O(1)"
+          ],
+          "answer": "O(n)"
+        }
+      ],
+      "selectedAnswers": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "score": 0,
+      "total": 10,
+      "attempts": [
+        {
+          "score": 0,
+          "total": 10,
+          "timestamp": "9/7/2026, 11:54:43 am",
+          "selectedSubject": "dsa",
+          "questions": [
+            {
+              "question": "Which sorting algorithm has the best case time complexity of O(n)?",
+              "options": [
+                "Bubble Sort",
+                "Insertion Sort",
+                "Merge Sort",
+                "Selection Sort"
+              ],
+              "answer": "Insertion Sort"
+            },
+            {
+              "question": "Which of the following is not a linear data structure?",
+              "options": [
+                "Graph",
+                "Queue",
+                "Array",
+                "Stack"
+              ],
+              "answer": "Graph"
+            },
+            {
+              "question": "Which traversal gives sorted output in BST?",
+              "options": [
+                "Inorder",
+                "Preorder",
+                "Postorder",
+                "Level Order"
+              ],
+              "answer": "Inorder"
+            },
+            {
+              "question": "Which of these is a non-linear data structure?",
+              "options": [
+                "Tree",
+                "Array",
+                "Stack",
+                "Queue"
+              ],
+              "answer": "Tree"
+            },
+            {
+              "question": "Which data structure is used in breadth-first search?",
+              "options": [
+                "Queue",
+                "Stack",
+                "Graph",
+                "Tree"
+              ],
+              "answer": "Queue"
+            },
+            {
+              "question": "Which of the following is not a type of binary tree?",
+              "options": [
+                "Circular Tree",
+                "Full Binary Tree",
+                "Complete Binary Tree",
+                "Perfect Binary Tree"
+              ],
+              "answer": "Circular Tree"
+            },
+            {
+              "question": "Which data structure uses LIFO (Last In First Out)?",
+              "options": [
+                "Stack",
+                "Queue",
+                "Array",
+                "Linked List"
+              ],
+              "answer": "Stack"
+            },
+            {
+              "question": "What is the time complexity to search in a hash table?",
+              "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+              ],
+              "answer": "O(1)"
+            },
+            {
+              "question": "What is the maximum number of nodes in a binary tree of height h?",
+              "options": [
+                "2^h - 1",
+                "h",
+                "h^2",
+                "2h"
+              ],
+              "answer": "2^h - 1"
+            },
+            {
+              "question": "What is the worst case time complexity of linear search?",
+              "options": [
+                "O(n)",
+                "O(log n)",
+                "O(n log n)",
+                "O(1)"
+              ],
+              "answer": "O(n)"
+            }
+          ],
+          "selectedAnswers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ]
     }
   }
 }

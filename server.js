@@ -4,7 +4,7 @@ const fs = require('fs');
 const session = require('express-session');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join(__dirname, 'data', 'storage.json');
 
 function ensureStorageFile() {
@@ -22,6 +22,46 @@ function readStorage() {
 function writeStorage(data) {
   ensureStorageFile();
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2));
+}
+
+function normalizeAnswer(value) {
+  return String(value ?? '').trim().toLowerCase();
+}
+
+function buildAttemptSummary(questions = [], selectedAnswers = [], fallbackScore = 0, fallbackTotal = 0) {
+  const safeQuestions = Array.isArray(questions) ? questions : [];
+  const safeAnswers = Array.isArray(selectedAnswers) ? selectedAnswers : [];
+  const total = Number(fallbackTotal) || safeQuestions.length || 0;
+
+  let correctCount = 0;
+  let attemptedCount = 0;
+
+  safeQuestions.forEach((question, index) => {
+    const userAnswer = safeAnswers[index];
+    const hasAnswer = userAnswer !== undefined && userAnswer !== null && String(userAnswer).trim() !== '';
+
+    if (hasAnswer) {
+      attemptedCount += 1;
+      if (normalizeAnswer(userAnswer) === normalizeAnswer(question?.answer)) {
+        correctCount += 1;
+      }
+    }
+  });
+
+  const unansweredCount = Math.max(total - attemptedCount, 0);
+  const score = Number(fallbackScore) || correctCount;
+  const computedTotal = total || safeQuestions.length || 0;
+  const percentage = computedTotal ? Math.round((score / computedTotal) * 100) : 0;
+
+  return {
+    score,
+    total: computedTotal,
+    correctCount,
+    incorrectCount: attemptedCount - correctCount,
+    unansweredCount,
+    attemptedCount,
+    percentage,
+  };
 }
 
 function getSessionEntry(req) {
@@ -148,15 +188,23 @@ app.get('/api/quiz/progress', isAuthenticated, (req, res) => {
 });
 
 app.post('/api/quiz/submit', isAuthenticated, (req, res) => {
-  const { subject, questions, selectedAnswers, score, total } = req.body || {};
+  const { subject, questions, selectedAnswers } = req.body || {};
   const entry = getSessionEntry(req);
+  const safeQuestions = questions || entry.questions || [];
+  const safeAnswers = selectedAnswers || entry.selectedAnswers || [];
+  const summary = buildAttemptSummary(safeQuestions, safeAnswers);
   const completedAttempt = {
-    score: Number(score) || 0,
-    total: Number(total) || (questions || []).length || 0,
+    score: summary.score,
+    total: summary.total,
+    correctCount: summary.correctCount,
+    incorrectCount: summary.incorrectCount,
+    unansweredCount: summary.unansweredCount,
+    attemptedCount: summary.attemptedCount,
+    percentage: summary.percentage,
     timestamp: new Date().toLocaleString(),
     selectedSubject: subject || entry.selectedSubject || '',
-    questions: questions || entry.questions || [],
-    selectedAnswers: selectedAnswers || entry.selectedAnswers || [],
+    questions: safeQuestions,
+    selectedAnswers: safeAnswers,
   };
 
   const attempts = [completedAttempt, ...(entry.attempts || [])].slice(0, 10);
@@ -167,6 +215,11 @@ app.post('/api/quiz/submit', isAuthenticated, (req, res) => {
     selectedAnswers: completedAttempt.selectedAnswers,
     score: completedAttempt.score,
     total: completedAttempt.total,
+    correctCount: completedAttempt.correctCount,
+    incorrectCount: completedAttempt.incorrectCount,
+    unansweredCount: completedAttempt.unansweredCount,
+    attemptedCount: completedAttempt.attemptedCount,
+    percentage: completedAttempt.percentage,
     attempts,
     testCompleted: true,
   });
@@ -177,12 +230,18 @@ app.post('/api/quiz/submit', isAuthenticated, (req, res) => {
 app.get('/api/result', isAuthenticated, (req, res) => {
   const entry = getSessionEntry(req);
   const attempts = entry.attempts || [];
-  const bestScore = attempts.reduce((best, attempt) => Math.max(best, Number(attempt.score) || 0), 0);
+  const summary = buildAttemptSummary(entry.questions || [], entry.selectedAnswers || [], entry.score, entry.total);
+  const bestScore = attempts.reduce((best, attempt) => Math.max(best, Number(attempt.score) || 0), summary.score);
 
   res.json({
     currentUser: entry.currentUser || req.session.currentUser || null,
-    score: Number(entry.score) || 0,
-    total: Number(entry.total) || 0,
+    score: summary.score,
+    total: summary.total,
+    correctCount: summary.correctCount,
+    incorrectCount: summary.incorrectCount,
+    unansweredCount: summary.unansweredCount,
+    attemptedCount: summary.attemptedCount,
+    percentage: summary.percentage,
     selectedSubject: entry.selectedSubject || '',
     selectedAnswers: entry.selectedAnswers || [],
     questions: entry.questions || [],
