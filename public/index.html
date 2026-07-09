@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Candidate Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6c5ce7;
+      --accent: #a29bfe;
+      --text-dark: #2d3436;
+      --text-light: #636e72;
+      --error: #d63031;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 520px;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1.6rem;
+      text-align: left;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 1rem 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--text-dark);
+      transition: 0.3s;
+    }
+
+    .input-group input:focus,
+    .input-group select:focus {
+      border-color: var(--primary);
+      outline: none;
+      background: #f0f4ff;
+    }
+
+    .input-group label {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.75rem;
+      background: white;
+      padding: 0 5px;
+      color: var(--text-light);
+      font-size: 0.85rem;
+      pointer-events: none;
+      transition: 0.3s ease;
+    }
+
+    .input-group input:focus + label,
+    .input-group input:not(:placeholder-shown) + label,
+    .input-group select:focus + label,
+    .input-group select:valid + label {
+      top: -0.6rem;
+      left: 0.65rem;
+      font-size: 0.75rem;
+      background: #fff;
+      color: var(--primary);
+    }
+
+    select:invalid {
+      color: #999;
+    }
+
+    #age {
+      font-size: 0.88rem;
+      color: #444;
+      margin-top: -1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .error {
+      color: var(--error);
+      font-size: 0.85rem;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 0.9rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        padding: 2rem 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Candidate Registration</h2>
+    <form id="registrationForm">
+      <div class="input-group">
+        <input type="text" id="name" name="name" placeholder=" " required />
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" name="email" placeholder=" " required />
+        <label for="email">E-mail</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="phone-number" name="phone-number" placeholder=" " required />
+        <label for="phone-number">Phone Number</label>
+      </div>
+
+      <div class="input-group">
+        <select name="gender" id="gender" required>
+          <option value="" disabled selected hidden></option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <label for="gender">Gender</label>
+      </div>
+
+      <div class="input-group">
+        <input type="date" id="date" name="DOB" required />
+        <label for="date">Date of Birth</label>
+      </div>
+
+      <div id="age"></div>
+      <div class="error" id="error-msg"></div>
+
+      <button type="submit" id="submit">Start Test</button>
+    </form>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

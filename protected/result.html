@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Result Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .result-card {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 550px;
+      text-align: center;
+      color: #222;
+    }
+
+    .result-card h2 {
+      margin-top: 0;
+      color: #222;
+      font-size: 24px;
+    }
+
+    .highlight {
+      color: #2e8b57;
+      font-weight: bold;
+    }
+
+    .low-score {
+      color: red;
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .button-group {
+      margin-top: 25px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .retake-btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1a73e8;
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .retake-btn:hover {
+      background-color: #155ab6;
+    }
+
+    #history-report {
+      display: none;
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    #history-report table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    #history-report th,
+    #history-report td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    #history-report th {
+      background-color: #eee;
+    }
+
+    .view-btn {
+      padding: 6px 14px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+
+    .view-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="result-card" id="result-container"></div>
+
+  <script src="./js/result.js" defer></script>
+</body>
+
+</html>

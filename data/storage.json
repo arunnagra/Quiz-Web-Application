@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "username": "Test User",
+      "useremail": "test@example.com",
+      "userphone": "1234567890",
+      "usergender": "Male",
+      "userdob": "2000-01-01"
+    },
+    {
+      "username": "Arun Nagra",
+      "useremail": "arunnagra654@gmail.com",
+      "userphone": "7564364667",
+      "usergender": "Male",
+      "userdob": "2010-03-12"
+    }
+  ],
+  "sessions": {
+    "9SSjIzT4dBrCNkQk-wCMPxSB6pPedWAJ": {
+      "authenticated": true,
+      "currentUser": {
+        "username": "Test User",
+        "useremail": "test@example.com",
+        "userphone": "1234567890",
+        "usergender": "Male",
+        "userdob": "2000-01-01"
+      },
+      "testCompleted": false,
+      "selectedSubject": "",
+      "questions": [],
+      "selectedAnswers": [],
+      "score": 0,
+      "total": 0,
+      "attempts": []
+    },
+    "5-6DGSTf5e8pSAgwLeh78bLTeMv1EYud": {
+      "authenticated": true,
+      "currentUser": {
+        "username": "Arun Nagra",
+        "useremail": "arunnagra654@gmail.com",
+        "userphone": "7564364667",
+        "usergender": "Male",
+        "userdob": "2010-03-12"
+      },
+      "testCompleted": false,
+      "selectedSubject": "",
+      "questions": [],
+      "selectedAnswers": [],
+      "score": 0,
+      "total": 0,
+      "attempts": []
+    }
+  }
+}

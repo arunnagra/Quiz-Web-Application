@@ -1,0 +1,1237 @@
+{
+  "webdev": [
+  {
+    "question": "What does HTML stand for?",
+    "options": ["HyperText Markup Language", "Hyperlink and Text Markup Language", "Home Tool Markup Language", "Hyper Tool Markup Language"],
+    "answer": "HyperText Markup Language"
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": ["Computer Style Sheets", "Cascading Style Sheets", "Creative Style Sheets", "Colorful Style Sheets"],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "options": ["<style>", "<css>", "<script>", "<link>"],
+    "answer": "<style>"
+  },
+  {
+    "question": "Which property is used to change the background color in CSS?",
+    "options": ["color", "bgcolor", "background-color", "background"],
+    "answer": "background-color"
+  },
+  {
+    "question": "Inside which HTML element do we put the JavaScript?",
+    "options": ["<script>", "<js>", "<javascript>", "<code>"],
+    "answer": "<script>"
+  },
+  {
+    "question": "How do you write 'Hello World' in an alert box in JavaScript?",
+    "options": ["alert('Hello World');", "msg('Hello World');", "msgBox('Hello World');", "alertBox('Hello World');"],
+    "answer": "alert('Hello World');"
+  },
+  {
+    "question": "Which HTML attribute is used to define inline styles?",
+    "options": ["style", "styles", "font", "class"],
+    "answer": "style"
+  },
+  {
+    "question": "What is the correct CSS syntax to make all <p> elements bold?",
+    "options": ["p {font-weight: bold;}", "<p style='bold'>", "p {text-size: bold;}", "p {font: bold;}"],
+    "answer": "p {font-weight: bold;}"
+  },
+  {
+    "question": "How do you create a function in JavaScript?",
+    "options": ["function myFunction()", "function:myFunction()", "create myFunction()", "def myFunction()"],
+    "answer": "function myFunction()"
+  },
+  {
+    "question": "How can you add a comment in a JavaScript file?",
+    "options": ["// This is a comment", "/* This is a comment */", "# This is a comment", "-- This is a comment"],
+    "answer": "// This is a comment"
+  },
+  {
+    "question": "Which HTML tag is used to display a picture?",
+    "options": ["<img>", "<image>", "<pic>", "<src>"],
+    "answer": "<img>"
+  },
+  {
+    "question": "Which CSS property controls the text size?",
+    "options": ["font-size", "text-style", "font-style", "text-size"],
+    "answer": "font-size"
+  },
+  {
+    "question": "Which company developed JavaScript?",
+    "options": ["Netscape", "Mozilla", "Microsoft", "Sun Microsystems"],
+    "answer": "Netscape"
+  },
+  {
+    "question": "How do you call a function named 'myFunction'?",
+    "options": ["myFunction()", "call myFunction()", "call function myFunction()", "run myFunction"],
+    "answer": "myFunction()"
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": ["Structured Query Language", "Strong Question Language", "Structured Question Language", "Simple Query Language"],
+    "answer": "Structured Query Language"
+  },
+  {
+    "question": "Which SQL command is used to fetch data?",
+    "options": ["SELECT", "GET", "PICK", "CHOOSE"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "Which HTML element is used to specify a footer for a document?",
+    "options": ["<footer>", "<bottom>", "<section>", "<aside>"],
+    "answer": "<footer>"
+  },
+  {
+    "question": "Which input type defines a slider in HTML5?",
+    "options": ["range", "slider", "scroll", "slide"],
+    "answer": "range"
+  },
+  {
+    "question": "How do you add a background color in HTML?",
+    "options": ["<body style='background-color:blue;'>", "<background>blue</background>", "<bg>blue</bg>", "<body bg='blue'>"],
+    "answer": "<body style='background-color:blue;'>"
+  },
+  {
+    "question": "Which symbol is used for comments in CSS?",
+    "options": ["/* comment */", "// comment", "# comment", "-- comment"],
+    "answer": "/* comment */"
+  },
+  {
+    "question": "How do you add a comment in HTML?",
+    "options": ["<!-- comment -->", "// comment", "# comment", "/* comment */"],
+    "answer": "<!-- comment -->"
+  },
+  {
+    "question": "Which HTML element is used to define a table row?",
+    "options": ["<tr>", "<row>", "<td>", "<table>"],
+    "answer": "<tr>"
+  },
+  {
+    "question": "Which programming language is primarily used for styling web pages?",
+    "options": ["CSS", "HTML", "Python", "Java"],
+    "answer": "CSS"
+  },
+  {
+    "question": "What is the correct HTML tag for the largest heading?",
+    "options": ["<h1>", "<head>", "<heading>", "<h6>"],
+    "answer": "<h1>"
+  },
+  {
+    "question": "Which HTML element is used to make text italic?",
+    "options": ["<i>", "<italic>", "<em>", "<it>"],
+    "answer": "<i>"
+  },
+  {
+    "question": "How do you insert a line break in HTML?",
+    "options": ["<br>", "<lb>", "<break>", "<newline>"],
+    "answer": "<br>"
+  },
+  {
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": ["<a>", "<link>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "question": "What does DOM stand for?",
+    "options": ["Document Object Model", "Data Object Model", "Document Oriented Model", "Desktop Object Model"],
+    "answer": "Document Object Model"
+  },
+  {
+    "question": "Which tag is used to create a checkbox in HTML?",
+    "options": ["<input type='checkbox'>", "<checkbox>", "<check>", "<box>"],
+    "answer": "<input type='checkbox'>"
+  },
+  {
+    "question": "Which event occurs when the user clicks on an HTML element?",
+    "options": ["onclick", "onmouseover", "onchange", "onpress"],
+    "answer": "onclick"
+  },
+  {
+    "question": "Which operator is used to assign a value to a variable in JavaScript?",
+    "options": ["=", "==", "===", ":"],
+    "answer": "="
+  },
+  {
+    "question": "Which tag is used to define an unordered list in HTML?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ul>"
+  },
+  {
+    "question": "How do you round the number 7.25 to the nearest integer in JavaScript?",
+    "options": ["Math.round(7.25)", "round(7.25)", "Math.floor(7.25)", "Math.ceil(7.25)"],
+    "answer": "Math.round(7.25)"
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "options": ["var", "int", "dim", "declare"],
+    "answer": "var"
+  },
+  {
+    "question": "How do you create a comment in SQL?",
+    "options": ["-- comment", "// comment", "/* comment */", "# comment"],
+    "answer": "-- comment"
+  },
+  {
+    "question": "Which protocol is used to load web pages?",
+    "options": ["HTTP", "FTP", "SMTP", "TCP"],
+    "answer": "HTTP"
+  },
+  {
+    "question": "Which HTML tag is used to define a list item?",
+    "options": ["<li>", "<list>", "<item>", "<ul>"],
+    "answer": "<li>"
+  },
+  {
+    "question": "Which method is used to find the length of a string in JavaScript?",
+    "options": ["length", "size", "count", "index"],
+    "answer": "length"
+  },
+  {
+    "question": "Which HTML tag is used to embed a video file?",
+    "options": ["<video>", "<media>", "<movie>", "<mp4>"],
+    "answer": "<video>"
+  },
+  {
+    "question": "What is the default value of the position property in CSS?",
+    "options": ["static", "relative", "fixed", "absolute"],
+    "answer": "static"
+  },
+  {
+    "question": "What does API stand for?",
+    "options": ["Application Programming Interface", "Advanced Programming Interface", "Application Program Instruction", "Application Performance Interface"],
+    "answer": "Application Programming Interface"
+  },
+  {
+    "question": "Which attribute is used in HTML to specify an image source?",
+    "options": ["src", "href", "link", "path"],
+    "answer": "src"
+  },
+  {
+    "question": "What is the default port number for HTTP?",
+    "options": ["80", "8080", "443", "21"],
+    "answer": "80"
+  },
+  {
+    "question": "Which operator is used to compare both value and type in JavaScript?",
+    "options": ["===", "==", "=", "!="],
+    "answer": "==="
+  },
+  {
+    "question": "What does JSON stand for?",
+    "options": ["JavaScript Object Notation", "Java Syntax Object Notation", "Java Source Object Notation", "Java Standard Output Notation"],
+    "answer": "JavaScript Object Notation"
+  },
+  {
+    "question": "Which CSS property sets the space between lines?",
+    "options": ["line-height", "spacing", "line-spacing", "text-height"],
+    "answer": "line-height"
+  },
+  {
+    "question": "Which HTML tag is used to define a navigation link?",
+    "options": ["<nav>", "<navigate>", "<link>", "<href>"],
+    "answer": "<nav>"
+  },
+  {
+    "question": "What is the file extension for JavaScript files?",
+    "options": [".js", ".java", ".jsx", ".script"],
+    "answer": ".js"
+  },
+  {
+    "question": "Which function is used to parse a JSON string in JavaScript?",
+    "options": ["JSON.parse()", "parseJSON()", "stringifyJSON()", "JSON.decode()"],
+    "answer": "JSON.parse()"
+  }
+  ],
+  "dsa": [
+  {
+    "question": "What is the time complexity of binary search algorithm?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which data structure uses LIFO (Last In First Out)?",
+    "options": ["Stack", "Queue", "Array", "Linked List"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which data structure is used for BFS in graph?",
+    "options": ["Queue", "Stack", "Heap", "Tree"],
+    "answer": "Queue"
+  },
+  {
+    "question": "What is the best case time complexity of Quick Sort?",
+    "options": ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+    "answer": "O(n log n)"
+  },
+  {
+    "question": "Which traversal method is used in DFS?",
+    "options": ["Stack", "Queue", "Priority Queue", "Linked List"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which of the following is not a linear data structure?",
+    "options": ["Graph", "Queue", "Array", "Stack"],
+    "answer": "Graph"
+  },
+  {
+    "question": "Which sorting algorithm is the fastest in average case?",
+    "options": ["Quick Sort", "Merge Sort", "Bubble Sort", "Selection Sort"],
+    "answer": "Quick Sort"
+  },
+  {
+    "question": "Which data structure is used for implementing recursion?",
+    "options": ["Stack", "Queue", "Heap", "Graph"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which of the following is not a type of binary tree?",
+    "options": ["Circular Tree", "Full Binary Tree", "Complete Binary Tree", "Perfect Binary Tree"],
+    "answer": "Circular Tree"
+  },
+  {
+    "question": "What is the time complexity of inserting an element in a max heap?",
+    "options": ["O(log n)", "O(n)", "O(1)", "O(n log n)"],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+    "options": ["Dijkstra's Algorithm", "Prim's Algorithm", "Kruskal's Algorithm", "DFS"],
+    "answer": "Dijkstra's Algorithm"
+  },
+  {
+    "question": "Which traversal gives sorted output in BST?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level Order"],
+    "answer": "Inorder"
+  },
+  {
+    "question": "What is the time complexity to search in a balanced binary search tree?",
+    "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
+    "answer": "O(log n)"
+  },
+  {
+    "question": "Which data structure supports FIFO (First In First Out)?",
+    "options": ["Queue", "Stack", "Heap", "Array"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which of the following is a self-balancing binary search tree?",
+    "options": ["AVL Tree", "Heap", "Binary Heap", "Segment Tree"],
+    "answer": "AVL Tree"
+  },
+  {
+    "question": "Which of these has the worst case time complexity of O(n^2)?",
+    "options": ["Bubble Sort", "Merge Sort", "Quick Sort", "Heap Sort"],
+    "answer": "Bubble Sort"
+  },
+  {
+    "question": "Which data structure is best for implementing LRU cache?",
+    "options": ["HashMap + Doubly Linked List", "Stack", "Array", "Queue"],
+    "answer": "HashMap + Doubly Linked List"
+  },
+  {
+    "question": "What is the maximum number of nodes in a binary tree of height h?",
+    "options": ["2^h - 1", "h", "h^2", "2h"],
+    "answer": "2^h - 1"
+  },
+  {
+    "question": "Which tree traversal uses recursive calls in the order: left -> root -> right?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level Order"],
+    "answer": "Inorder"
+  },
+  {
+    "question": "Which algorithm is used to detect cycles in a graph?",
+    "options": ["DFS", "BFS", "Dijkstra", "Prim"],
+    "answer": "DFS"
+  },
+  {
+    "question": "Which of the following is a divide and conquer algorithm?",
+    "options": ["Merge Sort", "Bubble Sort", "Insertion Sort", "Selection Sort"],
+    "answer": "Merge Sort"
+  },
+  {
+    "question": "What is the space complexity of DFS traversal?",
+    "options": ["O(h)", "O(n)", "O(1)", "O(log n)"],
+    "answer": "O(h)"
+  },
+  {
+    "question": "Which operation is the most time-consuming in a linked list?",
+    "options": ["Access", "Insert", "Delete", "Search"],
+    "answer": "Access"
+  },
+  {
+    "question": "Which data structure is used to implement a priority queue?",
+    "options": ["Heap", "Stack", "Queue", "Linked List"],
+    "answer": "Heap"
+  },
+  {
+    "question": "Which of the following is used to implement undo feature?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which traversal method is used to convert infix to postfix?",
+    "options": ["Postorder", "Inorder", "Preorder", "DFS"],
+    "answer": "Postorder"
+  },
+  {
+    "question": "Which algorithm is used for minimum spanning tree?",
+    "options": ["Prim's Algorithm", "DFS", "BFS", "Dijkstra"],
+    "answer": "Prim's Algorithm"
+  },
+  {
+    "question": "Which sorting algorithm has the best case time complexity of O(n)?",
+    "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+    "answer": "Insertion Sort"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in an array?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "answer": "O(1)"
+  },
+  {
+    "question": "Which data structure is used in breadth-first search?",
+    "options": ["Queue", "Stack", "Graph", "Tree"],
+    "answer": "Queue"
+  },
+  {
+    "question": "Which traversal is used in expression tree evaluation?",
+    "options": ["Postorder", "Preorder", "Inorder", "Level Order"],
+    "answer": "Postorder"
+  },
+  {
+    "question": "What is the height of a balanced binary tree with n nodes?",
+    "options": ["log n", "n", "n log n", "sqrt(n)"],
+    "answer": "log n"
+  },
+  {
+    "question": "What is the main application of Hash Tables?",
+    "options": ["Fast lookup", "Sorting", "Tree Traversal", "Graph Search"],
+    "answer": "Fast lookup"
+  },
+  {
+    "question": "What is the time complexity of deleting a node in a linked list?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": "O(1)"
+  },
+  {
+    "question": "Which of these is a non-linear data structure?",
+    "options": ["Tree", "Array", "Stack", "Queue"],
+    "answer": "Tree"
+  },
+  {
+    "question": "Which algorithm is used for topological sorting?",
+    "options": ["DFS", "BFS", "Dijkstra", "Kruskal"],
+    "answer": "DFS"
+  },
+  {
+    "question": "Which data structure helps to avoid stack overflow in recursion?",
+    "options": ["Tail Recursion", "Stack", "Heap", "Queue"],
+    "answer": "Tail Recursion"
+  },
+  {
+    "question": "Which of these is not a valid heap type?",
+    "options": ["Median Heap", "Min Heap", "Max Heap", "Ternary Heap"],
+    "answer": "Median Heap"
+  },
+  {
+    "question": "What is the time complexity to insert in an unordered array?",
+    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+    "answer": "O(1)"
+  },
+  {
+    "question": "Which data structure is used to evaluate arithmetic expressions?",
+    "options": ["Stack", "Queue", "Heap", "Graph"],
+    "answer": "Stack"
+  },
+  {
+    "question": "Which of the following uses dynamic memory allocation?",
+    "options": ["Linked List", "Array", "Matrix", "Stack"],
+    "answer": "Linked List"
+  },
+  {
+    "question": "Which traversal prints nodes level by level?",
+    "options": ["Level Order", "Preorder", "Inorder", "Postorder"],
+    "answer": "Level Order"
+  },
+  {
+    "question": "Which algorithm uses backtracking?",
+    "options": ["N-Queens", "Dijkstra", "Prim", "Binary Search"],
+    "answer": "N-Queens"
+  },
+  {
+    "question": "Which data structure stores elements in key-value pairs?",
+    "options": ["Hash Map", "Array", "Queue", "Stack"],
+    "answer": "Hash Map"
+  },
+  {
+    "question": "What is the worst case time complexity of linear search?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "answer": "O(n)"
+  },
+  {
+    "question": "Which structure allows fast insertions and deletions at both ends?",
+    "options": ["Deque", "Stack", "Queue", "Array"],
+    "answer": "Deque"
+  },
+  {
+    "question": "What is the time complexity to search in a hash table?",
+    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+    "answer": "O(1)"
+  },
+  {
+    "question": "Which algorithm is used for cycle detection in undirected graphs?",
+    "options": ["Union-Find", "Dijkstra", "DFS", "BFS"],
+    "answer": "Union-Find"
+  },
+  {
+    "question": "Which of these is not used in graph representation?",
+    "options": ["Priority Queue", "Adjacency List", "Adjacency Matrix", "Incidence Matrix"],
+    "answer": "Priority Queue"
+  }
+],
+  "os": [
+  {
+    "question": "Which of the following is not a function of an operating system?",
+    "options": ["Compiling code", "Memory management", "Process scheduling", "File system management"],
+    "answer": "Compiling code"
+  },
+  {
+    "question": "Which of these is an example of a real-time operating system?",
+    "options": ["RTLinux", "Windows 10", "Ubuntu", "macOS"],
+    "answer": "RTLinux"
+  },
+  {
+    "question": "What is the full form of IPC in operating systems?",
+    "options": ["Inter Process Communication", "Intra Process Communication", "Internal Process Control", "Inter Process Control"],
+    "answer": "Inter Process Communication"
+  },
+  {
+    "question": "What is the purpose of a system call?",
+    "options": ["To request a service from the OS", "To compile the program", "To manage files", "To boot the OS"],
+    "answer": "To request a service from the OS"
+  },
+  {
+    "question": "Which of the following is used to uniquely identify a process in OS?",
+    "options": ["PID", "UID", "GID", "SID"],
+    "answer": "PID"
+  },
+  {
+    "question": "In which scheduling algorithm is the process with the smallest execution time selected first?",
+    "options": ["SJF", "FCFS", "Round Robin", "Priority"],
+    "answer": "SJF"
+  },
+  {
+    "question": "What is a deadlock?",
+    "options": ["Two or more processes waiting indefinitely for resources", "A type of page replacement", "A CPU scheduling algorithm", "A process synchronization method"],
+    "answer": "Two or more processes waiting indefinitely for resources"
+  },
+  {
+    "question": "Which memory management technique uses fixed-size blocks?",
+    "options": ["Paging", "Segmentation", "Contiguous allocation", "Swapping"],
+    "answer": "Paging"
+  },
+  {
+    "question": "Which of the following is not a type of scheduler in an OS?",
+    "options": ["Medium-term scheduler", "Short-term scheduler", "End-term scheduler", "Long-term scheduler"],
+    "answer": "End-term scheduler"
+  },
+  {
+    "question": "Which of these is a non-preemptive scheduling algorithm?",
+    "options": ["FCFS", "Round Robin", "SRTF", "Priority (preemptive)"],
+    "answer": "FCFS"
+  },
+  {
+    "question": "Which command is used to display the currently running processes in Linux?",
+    "options": ["ps", "cd", "ls", "kill"],
+    "answer": "ps"
+  },
+  {
+    "question": "What does a semaphore do in operating systems?",
+    "options": ["Controls access to shared resources", "Schedules processes", "Loads OS into RAM", "Clears memory"],
+    "answer": "Controls access to shared resources"
+  },
+  {
+    "question": "Which of the following is a technique to avoid deadlock?",
+    "options": ["Banker's Algorithm", "Shortest Job First", "Paging", "Swapping"],
+    "answer": "Banker's Algorithm"
+  },
+  {
+    "question": "Which of the following is not a state of a process?",
+    "options": ["Executing", "Waiting", "Blocked", "Scheduling"],
+    "answer": "Scheduling"
+  },
+  {
+    "question": "Thrashing is related to:",
+    "options": ["Excessive paging", "Deadlock", "File corruption", "CPU scheduling"],
+    "answer": "Excessive paging"
+  },
+  {
+    "question": "What is the role of a device driver?",
+    "options": ["Interface between hardware and OS", "Compiles code", "Runs antivirus", "Formats disks"],
+    "answer": "Interface between hardware and OS"
+  },
+  {
+    "question": "Which of the following is not a disk scheduling algorithm?",
+    "options": ["LOOK", "SCAN", "LRU", "C-SCAN"],
+    "answer": "LRU"
+  },
+  {
+    "question": "Which of the following file systems is used in Linux?",
+    "options": ["ext4", "NTFS", "FAT32", "HFS+"],
+    "answer": "ext4"
+  },
+  {
+    "question": "Which scheduling algorithm gives the best average turnaround time?",
+    "options": ["SJF", "FCFS", "Round Robin", "Priority"],
+    "answer": "SJF"
+  },
+  {
+    "question": "Which type of memory is volatile?",
+    "options": ["RAM", "ROM", "SSD", "Hard disk"],
+    "answer": "RAM"
+  },
+  {
+    "question": "Which register stores the address of the next instruction to be executed?",
+    "options": ["Program Counter", "Accumulator", "Instruction Register", "Memory Address Register"],
+    "answer": "Program Counter"
+  },
+  {
+    "question": "Which part of the OS loads first when a computer is booted?",
+    "options": ["Kernel", "Shell", "BIOS", "Bootloader"],
+    "answer": "Bootloader"
+  },
+  {
+    "question": "Which algorithm replaces the page that will not be used for the longest time?",
+    "options": ["Optimal Page Replacement", "LRU", "FIFO", "Clock"],
+    "answer": "Optimal Page Replacement"
+  },
+  {
+    "question": "What is a context switch?",
+    "options": ["Switching CPU from one process to another", "Switching monitor resolution", "Changing file format", "Changing memory size"],
+    "answer": "Switching CPU from one process to another"
+  },
+  {
+    "question": "Which of these is not an operating system?",
+    "options": ["Oracle", "Linux", "Windows", "macOS"],
+    "answer": "Oracle"
+  },
+  {
+    "question": "Which of the following is not a component of the OS?",
+    "options": ["Compiler", "File Management", "Process Management", "Memory Management"],
+    "answer": "Compiler"
+  },
+  {
+    "question": "Which of the following is used in multiprogramming systems?",
+    "options": ["Time Sharing", "Machine language", "Virtual Reality", "Cloud Storage"],
+    "answer": "Time Sharing"
+  },
+  {
+    "question": "Which of the following uses round-robin scheduling?",
+    "options": ["Time-sharing systems", "Real-time systems", "Batch systems", "Embedded systems"],
+    "answer": "Time-sharing systems"
+  },
+  {
+    "question": "Which memory is used for storing BIOS?",
+    "options": ["ROM", "RAM", "Cache", "Virtual Memory"],
+    "answer": "ROM"
+  },
+  {
+    "question": "Which technique is used to handle deadlock?",
+    "options": ["Avoidance", "Recovery", "Prevention", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "What does the 'nice' value in Linux determine?",
+    "options": ["Process priority", "File size", "User permission", "Disk space"],
+    "answer": "Process priority"
+  },
+  {
+    "question": "Which OS uses a command line interface by default?",
+    "options": ["DOS", "Windows", "macOS", "Android"],
+    "answer": "DOS"
+  },
+  {
+    "question": "Which is the fastest inter-process communication method?",
+    "options": ["Shared memory", "Message passing", "Semaphores", "Signals"],
+    "answer": "Shared memory"
+  },
+  {
+    "question": "Which of the following is true about virtual memory?",
+    "options": ["Allows more processes to be run than physical memory", "Slows down the system", "Only used in mobile OS", "Used to protect files"],
+    "answer": "Allows more processes to be run than physical memory"
+  },
+  {
+    "question": "Which process state means the process is ready but waiting for CPU?",
+    "options": ["Ready", "Running", "Blocked", "Terminated"],
+    "answer": "Ready"
+  },
+  {
+    "question": "Which OS is mainly used in mobile phones?",
+    "options": ["Android", "Windows", "Linux Mint", "Kali Linux"],
+    "answer": "Android"
+  },
+  {
+    "question": "Which of the following is not a valid page replacement algorithm?",
+    "options": ["FIFO", "LRU", "Optimal", "Shortest Job First"],
+    "answer": "Shortest Job First"
+  },
+  {
+    "question": "What is the function of BIOS?",
+    "options": ["Initialize hardware during booting", "Run antivirus", "Compile code", "Install OS"],
+    "answer": "Initialize hardware during booting"
+  },
+  {
+    "question": "Which algorithm is used in UNIX for CPU scheduling?",
+    "options": ["Multilevel Feedback Queue", "Round Robin", "SJF", "FIFO"],
+    "answer": "Multilevel Feedback Queue"
+  },
+  {
+    "question": "Which type of OS is MS-DOS?",
+    "options": ["Single-user, single-tasking", "Multi-user, multi-tasking", "Real-time", "Distributed"],
+    "answer": "Single-user, single-tasking"
+  },
+  {
+    "question": "Which interrupt is caused by an I/O device?",
+    "options": ["Hardware interrupt", "Software interrupt", "Trap", "Program interrupt"],
+    "answer": "Hardware interrupt"
+  },
+  {
+    "question": "Which command is used to terminate a process in Linux?",
+    "options": ["kill", "exit", "terminate", "remove"],
+    "answer": "kill"
+  },
+  {
+    "question": "Which OS component allocates resources to active processes?",
+    "options": ["Kernel", "Shell", "Driver", "API"],
+    "answer": "Kernel"
+  },
+  {
+    "question": "Which mode of CPU operation restricts access to critical instructions?",
+    "options": ["User mode", "Kernel mode", "Supervisor mode", "Admin mode"],
+    "answer": "User mode"
+  },
+  {
+    "question": "Which file system is used in Windows by default?",
+    "options": ["NTFS", "ext4", "FAT32", "HFS+"],
+    "answer": "NTFS"
+  },
+  {
+    "question": "Which OS concept keeps multiple jobs in memory at the same time?",
+    "options": ["Multiprogramming", "Multithreading", "Spooling", "Virtualization"],
+    "answer": "Multiprogramming"
+  },
+  {
+    "question": "Which command is used to change file permissions in Linux?",
+    "options": ["chmod", "chperm", "chown", "perm"],
+    "answer": "chmod"
+  },
+  {
+    "question": "Which component handles input and output operations?",
+    "options": ["I/O subsystem", "Memory manager", "Scheduler", "Compiler"],
+    "answer": "I/O subsystem"
+  }
+],
+  "networking": [
+  {
+    "question": "Which device operates at the network layer of the OSI model?",
+    "options": ["Router", "Switch", "Hub", "Repeater"],
+    "answer": "Router"
+  },
+  {
+    "question": "Which protocol is used to send email?",
+    "options": ["SMTP", "HTTP", "FTP", "SNMP"],
+    "answer": "SMTP"
+  },
+  {
+    "question": "Which layer in the OSI model is responsible for end-to-end delivery?",
+    "options": ["Transport", "Network", "Data Link", "Session"],
+    "answer": "Transport"
+  },
+  {
+    "question": "What does IP stand for?",
+    "options": ["Internet Protocol", "Internet Packet", "Interface Protocol", "Internal Protocol"],
+    "answer": "Internet Protocol"
+  },
+  {
+    "question": "Which protocol is used to retrieve emails from a server?",
+    "options": ["POP3", "SMTP", "ICMP", "HTTP"],
+    "answer": "POP3"
+  },
+  {
+    "question": "Which IP address class is reserved for multicast?",
+    "options": ["Class D", "Class A", "Class B", "Class E"],
+    "answer": "Class D"
+  },
+  {
+    "question": "What is the default port number for HTTP?",
+    "options": ["80", "21", "110", "25"],
+    "answer": "80"
+  },
+  {
+    "question": "Which protocol provides reliable communication?",
+    "options": ["TCP", "UDP", "IP", "ARP"],
+    "answer": "TCP"
+  },
+  {
+    "question": "Which layer handles error detection and correction?",
+    "options": ["Data Link", "Transport", "Network", "Application"],
+    "answer": "Data Link"
+  },
+  {
+    "question": "What is the full form of DNS?",
+    "options": ["Domain Name System", "Dynamic Network Setup", "Data Network Service", "Domain Number Scheme"],
+    "answer": "Domain Name System"
+  },
+  {
+    "question": "Which address is used to identify a device at the data link layer?",
+    "options": ["MAC address", "IP address", "Port number", "Domain name"],
+    "answer": "MAC address"
+  },
+  {
+    "question": "Which device connects different networks?",
+    "options": ["Router", "Switch", "Bridge", "Hub"],
+    "answer": "Router"
+  },
+  {
+    "question": "Which layer in the OSI model handles routing?",
+    "options": ["Network", "Transport", "Session", "Data Link"],
+    "answer": "Network"
+  },
+  {
+    "question": "What is the size of an IPv4 address?",
+    "options": ["32 bits", "64 bits", "128 bits", "16 bits"],
+    "answer": "32 bits"
+  },
+  {
+    "question": "Which layer is responsible for encryption and compression?",
+    "options": ["Presentation", "Session", "Transport", "Network"],
+    "answer": "Presentation"
+  },
+  {
+    "question": "Which of the following is a connectionless protocol?",
+    "options": ["UDP", "TCP", "SMTP", "FTP"],
+    "answer": "UDP"
+  },
+  {
+    "question": "Which command is used to check connectivity in a network?",
+    "options": ["ping", "ipconfig", "tracert", "netstat"],
+    "answer": "ping"
+  },
+  {
+    "question": "Which topology requires a central controller?",
+    "options": ["Star", "Ring", "Bus", "Mesh"],
+    "answer": "Star"
+  },
+  {
+    "question": "What does ARP stand for?",
+    "options": ["Address Resolution Protocol", "Automatic Routing Protocol", "Access Request Protocol", "Address Routing Protocol"],
+    "answer": "Address Resolution Protocol"
+  },
+  {
+    "question": "Which protocol is used to assign IP addresses automatically?",
+    "options": ["DHCP", "DNS", "ICMP", "ARP"],
+    "answer": "DHCP"
+  },
+  {
+    "question": "Which of these is an application layer protocol?",
+    "options": ["HTTP", "TCP", "IP", "ARP"],
+    "answer": "HTTP"
+  },
+  {
+    "question": "Which protocol is used for secure communication over HTTP?",
+    "options": ["HTTPS", "SFTP", "SSH", "TLS"],
+    "answer": "HTTPS"
+  },
+  {
+    "question": "Which port number is used by FTP?",
+    "options": ["21", "80", "25", "110"],
+    "answer": "21"
+  },
+  {
+    "question": "Which device regenerates signals in a network?",
+    "options": ["Repeater", "Router", "Bridge", "Switch"],
+    "answer": "Repeater"
+  },
+  {
+    "question": "Which protocol maps IP addresses to MAC addresses?",
+    "options": ["ARP", "RARP", "DNS", "DHCP"],
+    "answer": "ARP"
+  },
+  {
+    "question": "What is the main advantage of fiber optic cables?",
+    "options": ["High speed and bandwidth", "Cheap installation", "Easy to tap", "Low security"],
+    "answer": "High speed and bandwidth"
+  },
+  {
+    "question": "Which of the following is a private IP address?",
+    "options": ["192.168.1.1", "8.8.8.8", "172.10.10.10", "203.0.113.1"],
+    "answer": "192.168.1.1"
+  },
+  {
+    "question": "Which layer is responsible for flow control?",
+    "options": ["Transport", "Network", "Data Link", "Session"],
+    "answer": "Transport"
+  },
+  {
+    "question": "What is the main function of the Session layer?",
+    "options": ["Dialog control and synchronization", "Routing", "Framing", "Error correction"],
+    "answer": "Dialog control and synchronization"
+  },
+  {
+    "question": "Which layer of the OSI model communicates directly with the user?",
+    "options": ["Application", "Presentation", "Session", "Transport"],
+    "answer": "Application"
+  },
+  {
+    "question": "Which protocol is used for network management?",
+    "options": ["SNMP", "SMTP", "SSH", "DHCP"],
+    "answer": "SNMP"
+  },
+  {
+    "question": "What is the function of NAT?",
+    "options": ["Convert private IP to public IP", "Assign IP addresses", "Encrypt packets", "Measure latency"],
+    "answer": "Convert private IP to public IP"
+  },
+  {
+    "question": "Which command shows network configuration on Windows?",
+    "options": ["ipconfig", "ifconfig", "netstat", "nslookup"],
+    "answer": "ipconfig"
+  },
+  {
+    "question": "Which protocol uses port 443?",
+    "options": ["HTTPS", "HTTP", "FTP", "SSH"],
+    "answer": "HTTPS"
+  },
+  {
+    "question": "Which address is used by switches to forward frames?",
+    "options": ["MAC address", "IP address", "Port number", "Host name"],
+    "answer": "MAC address"
+  },
+  {
+    "question": "Which of these topologies has the highest redundancy?",
+    "options": ["Mesh", "Star", "Bus", "Ring"],
+    "answer": "Mesh"
+  },
+  {
+    "question": "Which network type spans a city?",
+    "options": ["MAN", "LAN", "WAN", "PAN"],
+    "answer": "MAN"
+  },
+  {
+    "question": "What is the maximum length of a MAC address?",
+    "options": ["48 bits", "32 bits", "64 bits", "128 bits"],
+    "answer": "48 bits"
+  },
+  {
+    "question": "Which protocol is used to determine the route taken by packets?",
+    "options": ["traceroute", "ping", "netstat", "ipconfig"],
+    "answer": "traceroute"
+  },
+  {
+    "question": "What is the purpose of subnetting?",
+    "options": ["Divide network into smaller sub-networks", "Increase IP address space", "Encrypt data", "Improve speed"],
+    "answer": "Divide network into smaller sub-networks"
+  },
+  {
+    "question": "Which command is used to test DNS resolution?",
+    "options": ["nslookup", "ping", "ipconfig", "arp"],
+    "answer": "nslookup"
+  },
+  {
+    "question": "Which address is unique to every device in the world?",
+    "options": ["MAC address", "IP address", "Subnet mask", "Host name"],
+    "answer": "MAC address"
+  },
+  {
+    "question": "Which device can work in multiple layers of the OSI model?",
+    "options": ["Router", "Switch", "Bridge", "Repeater"],
+    "answer": "Router"
+  },
+  {
+    "question": "Which of the following is a Layer 3 device?",
+    "options": ["Router", "Switch", "Hub", "Bridge"],
+    "answer": "Router"
+  },
+  {
+    "question": "Which network device operates at the physical layer?",
+    "options": ["Hub", "Router", "Switch", "Firewall"],
+    "answer": "Hub"
+  },
+  {
+    "question": "Which protocol is used for remote login?",
+    "options": ["SSH", "HTTP", "SMTP", "SNMP"],
+    "answer": "SSH"
+  },
+  {
+    "question": "Which of the following is a transport layer protocol?",
+    "options": ["TCP", "IP", "ARP", "DNS"],
+    "answer": "TCP"
+  },
+  {
+    "question": "Which term refers to the delay between sending and receiving data?",
+    "options": ["Latency", "Bandwidth", "Throughput", "Jitter"],
+    "answer": "Latency"
+  },
+  {
+    "question": "Which protocol ensures reliable delivery of data packets?",
+    "options": ["TCP", "UDP", "ICMP", "IP"],
+    "answer": "TCP"
+  },
+  {
+    "question": "Which layer handles packet fragmentation and reassembly?",
+    "options": ["Network", "Data Link", "Transport", "Session"],
+    "answer": "Network"
+  }
+],           
+  "dbms": [
+  {
+    "question": "What does DBMS stand for?",
+    "options": ["Database Management System", "Data Backup Management System", "Data Base Main Server", "Data Build Management System"],
+    "answer": "Database Management System"
+  },
+  {
+    "question": "Which of the following is a type of DBMS?",
+    "options": ["Hierarchical", "Vertical", "Unidirectional", "Flat"],
+    "answer": "Hierarchical"
+  },
+  {
+    "question": "Which language is used to define the structure of a database?",
+    "options": ["DDL", "DML", "DCL", "SQL"],
+    "answer": "DDL"
+  },
+  {
+    "question": "What is a tuple in a relational database?",
+    "options": ["Row", "Column", "Field", "Table"],
+    "answer": "Row"
+  },
+  {
+    "question": "Which command is used to remove a table from a database?",
+    "options": ["DROP", "DELETE", "REMOVE", "ERASE"],
+    "answer": "DROP"
+  },
+  {
+    "question": "Which of the following is not a DML command?",
+    "options": ["UPDATE", "DELETE", "SELECT", "CREATE"],
+    "answer": "CREATE"
+  },
+  {
+    "question": "What is the purpose of the PRIMARY KEY?",
+    "options": ["Uniquely identifies each record", "Increases performance", "Allows NULL values", "Duplicates rows"],
+    "answer": "Uniquely identifies each record"
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": ["Structured Query Language", "Sequential Query Language", "System Query Language", "Simple Query Language"],
+    "answer": "Structured Query Language"
+  },
+  {
+    "question": "Which normal form removes transitive dependency?",
+    "options": ["3NF", "1NF", "2NF", "BCNF"],
+    "answer": "3NF"
+  },
+  {
+    "question": "What is a foreign key?",
+    "options": ["A key that refers to the primary key of another table", "A duplicate key", "A unique constraint", "A key from a different database"],
+    "answer": "A key that refers to the primary key of another table"
+  },
+  {
+    "question": "Which of these is not a property of a transaction?",
+    "options": ["Accuracy", "Atomicity", "Isolation", "Durability"],
+    "answer": "Accuracy"
+  },
+  {
+    "question": "Which SQL clause is used to filter records?",
+    "options": ["WHERE", "GROUP BY", "ORDER BY", "HAVING"],
+    "answer": "WHERE"
+  },
+  {
+    "question": "Which command is used to add new rows to a table?",
+    "options": ["INSERT", "ADD", "APPEND", "NEW"],
+    "answer": "INSERT"
+  },
+  {
+    "question": "Which of the following is a DCL command?",
+    "options": ["GRANT", "SELECT", "UPDATE", "CREATE"],
+    "answer": "GRANT"
+  },
+  {
+    "question": "What is the default sort order of ORDER BY?",
+    "options": ["Ascending", "Descending", "Random", "None"],
+    "answer": "Ascending"
+  },
+  {
+    "question": "What is normalization?",
+    "options": ["Reducing redundancy", "Inserting data", "Updating schema", "Backing up data"],
+    "answer": "Reducing redundancy"
+  },
+  {
+    "question": "Which constraint ensures that values in a column are unique?",
+    "options": ["UNIQUE", "NOT NULL", "PRIMARY KEY", "CHECK"],
+    "answer": "UNIQUE"
+  },
+  {
+    "question": "Which of these is a valid SQL aggregate function?",
+    "options": ["SUM", "INCREMENT", "APPEND", "SET"],
+    "answer": "SUM"
+  },
+  {
+    "question": "What is the purpose of the COMMIT command?",
+    "options": ["Saves changes", "Rolls back changes", "Ends connection", "Creates schema"],
+    "answer": "Saves changes"
+  },
+  {
+    "question": "Which operator is used to combine results of two SELECT statements?",
+    "options": ["UNION", "JOIN", "CONNECT", "PLUS"],
+    "answer": "UNION"
+  },
+  {
+    "question": "What does ACID stand for in databases?",
+    "options": ["Atomicity, Consistency, Isolation, Durability", "Access, Control, Integrity, Durability", "Accuracy, Clarity, Integrity, Delivery", "Atomicity, Communication, Integration, Durability"],
+    "answer": "Atomicity, Consistency, Isolation, Durability"
+  },
+  {
+    "question": "Which join returns only the common rows from two tables?",
+    "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN"],
+    "answer": "INNER JOIN"
+  },
+  {
+    "question": "Which normal form eliminates partial dependency?",
+    "options": ["2NF", "1NF", "3NF", "BCNF"],
+    "answer": "2NF"
+  },
+  {
+    "question": "Which key can accept null values?",
+    "options": ["Foreign key", "Primary key", "Candidate key", "Super key"],
+    "answer": "Foreign key"
+  },
+  {
+    "question": "Which command is used to modify a table structure?",
+    "options": ["ALTER", "UPDATE", "MODIFY", "CHANGE"],
+    "answer": "ALTER"
+  },
+  {
+    "question": "Which of the following is not a type of SQL join?",
+    "options": ["CROSS JOIN", "OUTER JOIN", "FULL JOIN", "SIDE JOIN"],
+    "answer": "SIDE JOIN"
+  },
+  {
+    "question": "What is a view in SQL?",
+    "options": ["A virtual table", "A copy of a table", "A physical table", "A stored query"],
+    "answer": "A virtual table"
+  },
+  {
+    "question": "Which clause is used to group rows with same values?",
+    "options": ["GROUP BY", "ORDER BY", "SORT BY", "COLLECT BY"],
+    "answer": "GROUP BY"
+  },
+  {
+    "question": "Which function returns the total number of rows in a query?",
+    "options": ["COUNT()", "SUM()", "MAX()", "ROWS()"],
+    "answer": "COUNT()"
+  },
+  {
+    "question": "Which level of data abstraction describes how data is stored?",
+    "options": ["Physical", "Logical", "View", "Conceptual"],
+    "answer": "Physical"
+  },
+  {
+    "question": "Which isolation level allows non-repeatable reads?",
+    "options": ["Read Committed", "Read Uncommitted", "Serializable", "Repeatable Read"],
+    "answer": "Read Committed"
+  },
+  {
+    "question": "Which of the following is a data model?",
+    "options": ["Relational", "SQL", "Trigger", "Schema"],
+    "answer": "Relational"
+  },
+  {
+    "question": "Which of the following is a schema?",
+    "options": ["Database structure", "Single table", "Column", "Record"],
+    "answer": "Database structure"
+  },
+  {
+    "question": "Which term represents a column in a table?",
+    "options": ["Attribute", "Tuple", "Relation", "Schema"],
+    "answer": "Attribute"
+  },
+  {
+    "question": "What is a trigger?",
+    "options": ["A procedure that executes automatically", "A unique key", "A type of join", "A form of backup"],
+    "answer": "A procedure that executes automatically"
+  },
+  {
+    "question": "What does a SELECT * statement do?",
+    "options": ["Selects all columns", "Selects primary keys", "Deletes data", "Creates a table"],
+    "answer": "Selects all columns"
+  },
+  {
+    "question": "What is an index in DBMS?",
+    "options": ["A data structure to speed up search", "A table row", "A type of key", "A schema"],
+    "answer": "A data structure to speed up search"
+  },
+  {
+    "question": "Which of the following is not an aggregate function?",
+    "options": ["SELECT", "COUNT", "MAX", "AVG"],
+    "answer": "SELECT"
+  },
+  {
+    "question": "What is the result of a cartesian product?",
+    "options": ["All combinations of rows", "Only matching rows", "No rows", "First 10 rows"],
+    "answer": "All combinations of rows"
+  },
+  {
+    "question": "Which SQL statement is used to modify existing records?",
+    "options": ["UPDATE", "INSERT", "ALTER", "MODIFY"],
+    "answer": "UPDATE"
+  },
+  {
+    "question": "Which constraint ensures that a column cannot have NULL values?",
+    "options": ["NOT NULL", "UNIQUE", "CHECK", "DEFAULT"],
+    "answer": "NOT NULL"
+  },
+  {
+    "question": "Which key uniquely identifies a record in a table?",
+    "options": ["Primary key", "Foreign key", "Candidate key", "Alternate key"],
+    "answer": "Primary key"
+  },
+  {
+    "question": "Which SQL keyword is used to sort the result-set?",
+    "options": ["ORDER BY", "SORT BY", "GROUP BY", "ARRANGE BY"],
+    "answer": "ORDER BY"
+  },
+  {
+    "question": "Which normal form is considered as the most normalized?",
+    "options": ["5NF", "3NF", "1NF", "2NF"],
+    "answer": "5NF"
+  },
+  {
+    "question": "Which of these is not a valid SQL clause?",
+    "options": ["SHOW", "FROM", "WHERE", "HAVING"],
+    "answer": "SHOW"
+  },
+  {
+    "question": "Which of the following is a TCL command?",
+    "options": ["COMMIT", "SELECT", "DROP", "CREATE"],
+    "answer": "COMMIT"
+  },
+  {
+    "question": "What is the main function of a database?",
+    "options": ["Store and manage data", "Edit photos", "Create reports", "Manage networks"],
+    "answer": "Store and manage data"
+  },
+  {
+    "question": "Which of these keys can be NULL?",
+    "options": ["Foreign Key", "Primary Key", "Unique Key", "Super Key"],
+    "answer": "Foreign Key"
+  },
+  {
+    "question": "Which of the following command is used to rollback a transaction?",
+    "options": ["ROLLBACK", "COMMIT", "REVERT", "UNDO"],
+    "answer": "ROLLBACK"
+  }
+]
+}
